@@ -1,11 +1,12 @@
-// Menú hamburguesa
+// Menú hamburguesa animado
 const hamburger = document.getElementById('hamburger');
-const navMenu = document.querySelector('#nav-menu ul'); // seleccionamos el ul
+const navMenu = document.querySelector('#nav-menu ul');
 hamburger.addEventListener('click', ()=>{
     navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
 });
 
-// Carrusel 3D avanzado
+// Carrusel 3D
 let slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 setInterval(()=>{
@@ -16,7 +17,7 @@ setInterval(()=>{
     currentSlide=(currentSlide+1)%slides.length;
 },4000);
 
-// Comprar con WhatsApp dinámico
+// Comprar WhatsApp dinámico
 const buyButtons = document.querySelectorAll('.buy-btn');
 buyButtons.forEach(btn=>{
     btn.addEventListener('click', e=>{
